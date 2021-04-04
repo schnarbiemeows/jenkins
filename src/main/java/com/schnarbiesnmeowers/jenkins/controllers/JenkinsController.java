@@ -22,7 +22,7 @@ import com.schnarbiesnmeowers.jenkins.pojos.*;
 @RequestMapping(path="/jenkins")
 public class JenkinsController {
 
-	private static final Logger logger = LogManager.getLogger("FileAppender");
+	private static final Logger FILE_LOGGER = LogManager.getLogger("FileAppender");
 
 	/**
 	 * JPA Repository handle

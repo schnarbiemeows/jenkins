@@ -24,7 +24,7 @@ import java.util.List;
 @Component
 public class JenkinsBusiness {
 
-	private static final Logger logger = LogManager.getLogger("FileAppender");
+	private static final Logger FILE_LOGGER = LogManager.getLogger("FileAppender");
 
 	/**
 	 * JPA Repository handle

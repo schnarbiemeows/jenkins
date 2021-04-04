@@ -20,7 +20,7 @@ public class Jenkins implements Serializable {
 	// default serial version id, required for serializable classes
 	private static final long serialVersionUID = 1L;
 
-	private static final Logger logger = LogManager.getLogger("FileAppender");
+	private static final Logger FILE_LOGGER = LogManager.getLogger("FileAppender");
 
 	/**
 	 * 

@@ -6,7 +6,7 @@ import org.apache.logging.log4j.Logger;
 
 public class ResponseMessage implements Serializable {
 
-	private static final Logger logger = LogManager.getLogger("FileAppender");
+	private static final Logger FILE_LOGGER = LogManager.getLogger("FileAppender");
 	private static final long serialVersionUID = 1L;
 	private String message;
 

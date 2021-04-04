@@ -15,8 +15,8 @@ import org.apache.logging.log4j.Logger;
  */
 public class Randomizer {
 
-	public static final String letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	private static final Logger logger = LogManager.getLogger("FileAppender");
+	public static final String LETTERS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	private static final Logger FILE_LOGGER = LogManager.getLogger("FileAppender");
 	private static Random rand = new Random();
 
 	/**
@@ -25,10 +25,10 @@ public class Randomizer {
 	 * @return
 	 */
 	public static String randomString(int length) {
-		int letterslength = letters.length();
+		int letterslength = LETTERS.length();
 		StringBuilder newword = new StringBuilder();
 		for(int i = 0; i < length; i++) {
-			char letter = letters.charAt(rand.nextInt(letterslength));
+			char letter = LETTERS.charAt(rand.nextInt(letterslength));
 			newword.append(letter);
 		}
 		return newword.toString();

@@ -12,7 +12,7 @@ import org.apache.logging.log4j.Logger;
  */
 public class ExceptionResponse extends ResponseEntityExceptionHandler {
 
-	private static final Logger logger = LogManager.getLogger("FileAppender");
+	private static final Logger FILE_LOGGER = LogManager.getLogger("FileAppender");
 
 	/**
 	 * time the exception occurred

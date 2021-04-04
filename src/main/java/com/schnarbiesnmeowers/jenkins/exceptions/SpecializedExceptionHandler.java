@@ -22,7 +22,7 @@ import org.apache.logging.log4j.Logger;
 @RestController
 public class SpecializedExceptionHandler extends ResponseEntityExceptionHandler {
 
-	private static final Logger logger = LogManager.getLogger("FileAppender");
+	private static final Logger FILE_LOGGER = LogManager.getLogger("FileAppender");
 
 	/**
 	 * override of the generic Exception handler

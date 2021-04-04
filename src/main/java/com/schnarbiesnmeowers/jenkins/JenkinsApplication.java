@@ -12,7 +12,7 @@ import org.apache.logging.log4j.Logger;
 @SpringBootApplication
 public class JenkinsApplication {
 
-	private static final Logger logger = LogManager.getLogger("FileAppender");
+	private static final Logger FILE_LOGGER = LogManager.getLogger("FileAppender");
 
 	/**
 	 * this is the main class for our Jenkins application
